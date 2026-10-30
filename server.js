@@ -5,7 +5,7 @@ const crypto = require("crypto");
 require("dotenv").config();
 
 const PORT = Number(process.env.PORT || 3000);
-const HOST = process.env.HOST || "127.0.0.1";
+const HOST = "0.0.0.0";
 
 const DATA_FILE = path.join(__dirname, "data.json");
 const ACCOUNTS_FILE = path.join(__dirname, "accounts.json");
